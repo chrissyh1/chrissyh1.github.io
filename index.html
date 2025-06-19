@@ -3,44 +3,47 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Chrissy Hernandez | Data + Creativity</title>
+  <title>Chrissy Hernandez | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="hero">
-    <h1>Chrissy Hernandez</h1>
+    <div class="hero-content">
+      <img src="profile.jpg" alt="Chrissy Hernandez" class="profile-pic">
+      <div>
+        <h1>Chrissy Hernandez</h1>
+        <p class="tagline">Junior data analyst & creative strategist</p>
+      </div>
+    </div>
   </header>
 
-  <div class="intro">
-    <img src="profile.jpg" alt="Chrissy Hernandez" class="profile-pic">
-    <p class="tagline">Junior data analyst, Creative strategist</p>
-  </div>
+  <main>
+    <section id="projects">
+      <h2>Featured Projects</h2>
+      <div class="project-card">
+        <h3>SQL Window Functions Series</h3>
+        <p>A 4-part SQL project exploring aggregations, subqueries, and time-based financial data analysis.</p>
+        <a href="https://github.com/christiiineh/chrissys_portfolio" target="_blank">View on GitHub</a>
+      </div>
+    </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>SQL Window Functions Series</h3>
-      <p>A 4-part project exploring aggregations, subqueries, and time-based analysis on financial data using SQL.</p>
-      <a href="https://github.com/christiiineh/chrissys_portfolio" target="_blank">View on GitHub</a>
-    </div>
-  </section>
+    <section id="resume">
+      <h2>Resume</h2>
+      <p>Take a look at my professional experience and education:</p>
+      <a href="resume.html" class="button">👁 View Resume</a>
+    </section>
 
-  <section id="resume">
-    <h2>Resume</h2>
-    <a href="resume.html" class="button">👁 View Resume Online</a>
-    
-  </section>
-
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form action="https://formspree.io/f/mnqezyrb" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form action="https://formspree.io/f/mnqezyrb" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
 
   <footer>
     <p>© 2025 Chrissy Hernandez · <a href="https://github.com/chrissyh1" target="_blank">GitHub</a></p>

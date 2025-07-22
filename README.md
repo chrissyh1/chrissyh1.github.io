@@ -1,3 +1,2 @@
 # chrissyh1.github.io
-My Personal Website
-View my portfolio here https://chrissyh1.github.io/
+View My Personal Website here https://chrissyh1.github.io/

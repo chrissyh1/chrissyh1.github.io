@@ -1,163 +1,110 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Chrissy Hernandez - Resume</title>
+  <title>Chrissy Hernandez – Resume</title>
   <style>
     body {
-      font-family: 'Times New Roman', Times, serif;
-      font-size: 9pt;
-      background: #fff;
-      color: #000;
-      padding: 40px;
-      max-width: 900px;
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      line-height: 1.6;
+      background-color: #f7f7f7;
+      color: #333;
+    }
+    .container {
+      max-width: 800px;
       margin: auto;
-      line-height: 1.4;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
-
-    h1 {
-      font-size: 16pt;
-      margin-bottom: 5px;
+    h1, h2 {
+      color: #222;
     }
-
-    .contact {
-      font-size: 9pt;
-      margin-bottom: 20px;
-    }
-
-    .contact a {
-      color: black;
+    a {
+      color: #0066cc;
       text-decoration: none;
     }
-
-    h2 {
-      border-bottom: 1px solid #000;
-      padding-bottom: 2px;
+    a:hover {
+      text-decoration: underline;
+    }
+    .download {
       margin-top: 20px;
-      font-size: 11pt;
     }
-
-    ul {
-      margin-top: 5px;
-      margin-left: 20px;
-      padding-left: 0;
-    }
-
-    li {
-      margin-bottom: 4px;
-    }
-
-    .job-title {
-      font-weight: bold;
-    }
-
-    .date {
-      float: right;
-      font-style: italic;
-    }
-
     .section {
-      margin-top: 20px;
+      margin-bottom: 25px;
     }
-
-    .download-btn {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 6px 12px;
-      background: #000;
-      color: white;
-      border-radius: 4px;
-      text-decoration: none;
-      font-size: 9pt;
-    }
-
-    @media print {
-      .download-btn {
-        display: none;
-      }
-    }
-
-    .clearfix::after {
-      content: "";
-      display: table;
-      clear: both;
+    ul {
+      margin: 10px 0;
+      padding-left: 20px;
     }
   </style>
 </head>
 <body>
+  <div class="container">
+    <h1>Chrissy Hernandez</h1>
+    <p><strong>Junior Data Analyst</strong> | SQL, Tableau, Power BI, Python<br/>
+    Clifton, NJ | <a href="mailto:chrissyh.data@gmail.com">chrissyh.data@gmail.com</a> | +1 862-402-2867</p>
+    <p>
+      <a href="https://linkedin.com/in/chrissyh1" target="_blank">LinkedIn</a> |
+      <a href="https://chrissyh1.github.io" target="_blank">GitHub</a>
+    </p>
 
-  <h1>Chrissy Hernandez</h1>
-  <p class="contact">
-    chrissyh.data@gmail.com | +1 862-402-2867 | Clifton, NJ<br>
-    <a href="https://www.linkedin.com/in/chrissyh1" target="_blank">www.linkedin.com/in/chrissyh1</a> |
-    <a href="https://chrissyh1.github.io/" target="_blank">https://chrissyh1.github.io/</a>
-  </p>
+    <div class="download">
+      📄 <a href="chrissy_hernandez_resume.pdf" download>Download Resume (PDF)</a>
+    </div>
 
-  <h2>PROFESSIONAL SUMMARY</h2>
-  <p>
-    Multidisciplinary professional with over 10 years of experience in hospitality, team leadership, and multimedia content creation. Recently completed an immersive Data Analytics Bootcamp with hands-on training in data wrangling, visualization, forecasting, and predictive modeling using Excel, SQL, Python, Tableau, and Power BI. Skilled in developing dashboards, analyzing KPIs, identifying customer behavior trends, and translating business challenges into data-driven insights. Experienced in creative content production and social media analytics, combining technical fluency and design thinking to support strategic decision-making.
-  </p>
+    <div class="section">
+      <h2>Professional Summary</h2>
+      <p>
+        Multidisciplinary professional with 10+ years in hospitality and content creation. Recently completed a Data Analytics Bootcamp with hands-on training in SQL, Python, Tableau, and Power BI. Skilled in KPI analysis, forecasting, and dashboarding. Adept at translating business problems into data-driven solutions. Creative storyteller with strong social media analytics experience.
+      </p>
+    </div>
 
-  <h2>TECHNICAL SKILLS</h2>
-  <ul>
-    <li><strong>Data Analysis and Programming:</strong> Excel (PivotTables, VLOOKUP, conditional formatting, charts, dashboards, data cleaning), SQL (joins, subqueries, window functions, aggregations, CTEs, data extraction), Python (pandas, NumPy, matplotlib, seaborn, data preprocessing, exploratory data analysis)</li>
-    <li><strong>Data Visualization and Business Intelligence:</strong> Tableau, Power BI (interactive dashboards, KPIs, storytelling, business intelligence reporting)</li>
-    <li><strong>Analytical Techniques:</strong> Data modeling, data wrangling, statistical analysis, trend analysis, forecasting, A/B testing, regression models, customer segmentation, data-driven decision making</li>
-    <li><strong>Business and Marketing Analytics:</strong> CRM data analysis, social media analytics, customer behavior insights, upselling strategy, revenue growth tracking, operational efficiency, team coordination</li>
-    <li><strong>Creative and Multimedia Tools:</strong> Adobe Creative Suite (Premiere, Photoshop, Illustrator, After Effects, Lightroom), FL Studio, photography, social media content creation, engagement tracking</li>
-  </ul>
+    <div class="section">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li><strong>Languages/Tools:</strong> Python (pandas, NumPy, matplotlib, seaborn), SQL (joins, CTEs), Excel (PivotTables, VLOOKUP, dashboards)</li>
+        <li><strong>BI:</strong> Tableau, Power BI</li>
+        <li><strong>Analytics:</strong> Data wrangling, forecasting, A/B testing, regression, segmentation</li>
+        <li><strong>Marketing/Business:</strong> CRM data, social media analytics, customer insights, upselling, operational efficiency</li>
+        <li><strong>Creative:</strong> Adobe Suite (Photoshop, Illustrator, Premiere, After Effects), FL Studio, photography, content creation</li>
+      </ul>
+    </div>
 
-  <h2>WORK EXPERIENCE</h2>
-  <div class="clearfix">
-    <strong>Crew Leader / Shift Supervisor</strong>
-    <span class="date">June 2018 – July 2024</span><br/>
-    Various Establishments – NJ, CA, TX, VA & PA
+    <div class="section">
+      <h2>Education</h2>
+      <p><strong>General Assembly – Data Analytics Certificate (2024–2025)</strong></p>
+      <ul>
+        <li>Music Data Analytics – SQL + Python analysis of top U.S. artists, built visual dashboards and predictive models.</li>
+        <li>Tableau COVID Tracker – Dynamic U.S. dashboard with filters and time-based visualizations.</li>
+        <li>Power BI: Nutrition Dashboard – Visualized USDA meal plan distribution by region and demographic.</li>
+        <li>SQL Product Ranking System – Advanced queries using JOINs, CTEs, and window functions.</li>
+      </ul>
+      <p><strong>Berkeley College – B.F.A. in Graphic Design (2019–2022)</strong><br/>
+      Focus: Typography, Branding, Adobe Creative Suite, Motion Graphics</p>
+    </div>
+
+    <div class="section">
+      <h2>Professional Experience</h2>
+      <p><strong>Crew Leader / Shift Supervisor – Various High-Volume Venues (2018–2024)</strong></p>
+      <ul>
+        <li>Reduced inventory waste by 15% and weekly ordering costs by 10% using Excel analysis.</li>
+        <li>Boosted drink sales by 25% via seasonal cocktail menus based on trend analysis.</li>
+        <li>Improved foot traffic by 15% and engagement by 40% through targeted social content.</li>
+        <li>Led 6–10 staff per shift, reduced turnover time by 20%, and maintained 99.9% financial accuracy.</li>
+      </ul>
+
+      <p><strong>Multimedia Marketer (2019–Present)</strong><br/>
+      Freelance marketing-focused creator and strategist working across platforms.</p>
+      <ul>
+        <liGrew reach by 50% and engagement by 35% using cross-platform analytics.</li>
+        <li>Engineered 60+ beats and vocal tracks using DAWs (FL Studio, Logic Pro) for branding and content, increasing listenership by 40%.</li>
+        <li>Designed 100+ pieces of digital cover art and branded graphics using Illustrator and Canva, boosting campaign performance by 20%.</li>
+      </ul>
+    </div>
   </div>
-  <ul>
-    <li>Used Excel to manage and analyze inventory data, reducing waste by 15% and optimizing stock levels, resulting in a 10% decrease in weekly ordering costs.</li>
-    <li>Conducted trend analysis to design seasonal cocktail menus, leading to a 25% increase in featured drink sales during peak months.</li>
-    <li>Created and tracked social media content performance, applying basic marketing analytics to boost engagement by 40% and increase foot traffic by 15%.</li>
-    <li>Applied customer behavior insights and upselling strategies, increasing average sales per guest by 18%.</li>
-    <li>Led shifts and coordinated a team of 6–10 staff, improving operational efficiency and reducing shift turnover time by 20%.</li>
-    <li>Reconciled daily financials with 99.9% accuracy, maintaining strict accountability and reducing end-of-day discrepancies by 85%.</li>
-  </ul>
-
-  <div class="clearfix">
-    <strong>Independent Multimedia Creator</strong>
-    <span class="date">2019 – Present</span>
-  </div>
-  <ul>
-    <li>Tracked and analyzed performance metrics across platforms including Spotify, YouTube, and Instagram, leading to a 35% increase in audience engagement and a 50% growth in content reach over 6 months.</li>
-    <li>Captured, edited, and curated over 500 original photos for visual branding, social media campaigns, and digital marketing materials using Adobe Lightroom and Photoshop.</li>
-    <li>Produced and edited 40+ video projects using Adobe Premiere; enhanced viewer retention by 25% through motion graphics and animation via After Effects.</li>
-    <li>Designed branded digital assets in Illustrator for use across websites, email campaigns, and social media, helping maintain brand consistency across 6+ platforms.</li>
-    <li>Executed 30+ multimedia projects independently using Adobe Creative Suite and DAWs (FL Studio, Pro Tools, Logic Pro), meeting all project deadlines with zero revisions requested on final deliverables.</li>
-    <li>Managed complete production workflows, improving creative turnaround time by 40% and ensuring on-time delivery for all assets.</li>
-    <li>Interpreted and applied engagement data to refine content strategy, resulting in a 20% boost in click-through rates (CTR) and improved post scheduling efficiency.</li>
-  </ul>
-
-  <h2>EDUCATION</h2>
-  <ul>
-    <li><strong>Berkeley College</strong> – B.F.A. in Graphic Design (Sept 2019 – Jun 2022)<br/>Typography, Photography & Editing, Branding, Digital Illustration, Motion Graphics, Adobe Creative Suite</li>
-    <li><strong>General Assembly</strong> – Data Analytics Certification (Oct 2024 – Jun 2025)<br/>Immersive training in Python, SQL, Tableau, Power BI, APIs, regression/classification, and data storytelling</li>
-  </ul>
-
-  <h2>ACADEMIC PROJECTS</h2>
-  <ul>
-    <li><strong>Music Analytics Capstone:</strong> Analyzed Spotify, YouTube & Instagram data from 2020–2025 to develop artist marketing strategies.</li>
-    <li><strong>Food Distribution Analysis (Power BI):</strong> Explored food insecurity and distribution patterns using interactive Power BI dashboards.</li>
-    <li><strong>COVID Storytelling (Tableau):</strong> Created a visual narrative of COVID-19 impact using Tableau's story dashboards.</li>
-    <li><strong>SQL Function Series:</strong> A 4-part series using SQL to explore window functions, rankings, aggregations, and financial metrics.</li>
-  </ul>
-
-  <p>
-<a class="download-btn" href="files/Chrissy_Hernandez_Resume_2025.pdf" download>
-  ⬇️ Download My Resume (PDF)
-</a>
-    </a>
-  </p>
-
 </body>
 </html>

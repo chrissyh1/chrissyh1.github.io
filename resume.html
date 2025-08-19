@@ -3,110 +3,138 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Chrissy Hernandez – Resume</title>
+  <title>Chrissy Hernandez – Junior Data Analyst Resume</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      background-color: #f9f9f9;
-      color: #333;
+    :root{
+      --bg:#f9f9fb;
+      --card:#ffffff;
+      --ink:#222;
+      --muted:#555;
+      --link:#0a66c2;
+      --ring:rgba(10,102,194,.15);
     }
-    .container {
-      max-width: 800px;
-      margin: auto;
-      background: #fff;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    *{box-sizing:border-box}
+    body{
+      margin:0; padding:32px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial;
+      line-height:1.55; color:var(--ink); background:var(--bg);
     }
-    h1, h2 {
-      color: #222;
-      margin-bottom: 10px;
+    .container{
+      max-width: 860px; margin: 0 auto; background:var(--card);
+      padding: 36px; border-radius: 14px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.08);
     }
-    a {
-      color: #0066cc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .download {
-      margin-top: 40px;
-      font-weight: bold;
-      font-size: 1.1em;
-    }
-    .section {
-      margin-bottom: 25px;
-    }
-    ul {
-      margin-top: 10px;
-      padding-left: 20px;
+    h1{font-size: 2rem; margin:0 0 6px}
+    h2{font-size:1.15rem; text-transform:uppercase; margin:28px 0 10px}
+    p{margin:0 0 10px}
+    .subhead{color:var(--muted); font-weight:600}
+    a{color:var(--link); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .contact, .links{display:flex; flex-wrap:wrap; gap:10px 16px; color:var(--muted)}
+    .at{opacity:.6}
+    .section{margin-top:20px}
+    ul{margin:8px 0 0; padding-left:20px}
+    .role{font-weight:700}
+    .meta{color:var(--muted)}
+    .download{margin-top:28px; font-weight:700}
+    /* Print */
+    @media print{
+      body{background:#fff; padding:0}
+      .container{box-shadow:none; border-radius:0; padding:0}
+      .download{display:none}
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Chrissy Hernandez</h1>
-    <p><strong>Junior Data Analyst</strong> | SQL, Tableau, Power BI, Python<br/>
-    Clifton, NJ | <a href="mailto:chrissyh.data@gmail.com">chrissyh.data@gmail.com</a> | +1 862-402-2867</p>
-    <p>
-      <a href="https://linkedin.com/in/chrissyh1" target="_blank">LinkedIn</a> |
-      <a href="https://chrissyh1.github.io" target="_blank">GitHub</a>
-    </p>
+  <main class="container" role="main">
+    <header>
+      <h1>Chrissy Hernandez</h1>
+      <p class="subhead">Junior Data Analyst <span class="at">|</span> SQL · Tableau · Power BI · Python</p>
 
-    <div class="section">
-      <h2>Professional Summary</h2>
+      <div class="contact">
+        <span>Clifton, NJ</span>
+        <span>•</span>
+        <a href="mailto:chrissyh.data@gmail.com">chrissyh.data@gmail.com</a>
+        <span>•</span>
+        <a href="tel:+18624022867">+1 (862) 402-2867</a>
+      </div>
+
+      <div class="links">
+        <a href="https://linkedin.com/in/chrissyh1" target="_blank" rel="noopener">LinkedIn</a>
+        <span>•</span>
+        <a href="https://chrissyh1.github.io" target="_blank" rel="noopener">GitHub/Portfolio</a>
+      </div>
+    </header>
+
+    <section class="section">
+      <h2>Summary</h2>
       <p>
-        Multidisciplinary professional with 10+ years in hospitality and content creation. Recently completed a Data Analytics Bootcamp with hands-on training in SQL, Python, Tableau, and Power BI. Skilled in KPI analysis, forecasting, and dashboarding. Adept at translating business problems into data-driven solutions. Creative storyteller with strong social media analytics experience.
+        Junior Data Analyst with 10+ years of professional experience in IT, real estate, and hospitality.
+        Completed a Data Analytics Bootcamp with hands-on projects in SQL, Python, Tableau, and Power BI.
+        Skilled in data visualization, business intelligence, and SQL reporting. Adept at KPI tracking,
+        forecasting, and dashboarding to transform raw data into insights that drive better decisions
+        and customer outcomes.
       </p>
-    </div>
+    </section>
 
-    <div class="section">
+    <section class="section">
       <h2>Technical Skills</h2>
       <ul>
-        <li><strong>Languages/Tools:</strong> Python (pandas, NumPy, matplotlib, seaborn), SQL (joins, CTEs), Excel (PivotTables, VLOOKUP, dashboards)</li>
-        <li><strong>BI:</strong> Tableau, Power BI</li>
+        <li><strong>Languages &amp; Tools:</strong> Python (pandas, NumPy, matplotlib, seaborn), SQL (JOINs, CTEs, window functions), Excel (PivotTables, VLOOKUP, dashboards)</li>
+        <li><strong>Business Intelligence:</strong> Tableau (calculated fields, interactive dashboards), Power BI (DAX, Power Query, data modeling)</li>
         <li><strong>Analytics:</strong> Data wrangling, forecasting, A/B testing, regression, segmentation</li>
-        <li><strong>Marketing/Business:</strong> CRM data, social media analytics, customer insights, upselling, operational efficiency</li>
-        <li><strong>Creative:</strong> Adobe Suite (Photoshop, Illustrator, Premiere, After Effects), FL Studio, photography, content creation</li>
       </ul>
-    </div>
+    </section>
 
-    <div class="section">
-      <h2>Education</h2>
-      <p><strong>General Assembly – Data Analytics Certificate (2024–2025)</strong></p>
+    <section class="section">
+      <h2>Projects</h2>
       <ul>
-        <li>Music Data Analytics – SQL + Python analysis of top U.S. artists, built visual dashboards and predictive models.</li>
-        <li>Tableau COVID Tracker – Dynamic U.S. dashboard with filters and time-based visualizations.</li>
-        <li>Power BI: Nutrition Dashboard – Visualized USDA meal plan distribution by region and demographic.</li>
-        <li>SQL Product Ranking System – Advanced queries using JOINs, CTEs, and window functions.</li>
+        <li><strong>Music Data Analytics</strong> (SQL, Python, Tableau): Analyzed top U.S. artists (2020–2025); built SQL queries, predictive models, and Tableau dashboards for trend insights.</li>
+        <li><strong>COVID Tracker</strong> (Tableau): Built U.S. dashboard with filters and time-series forecasting to track cases and vaccinations.</li>
+        <li><strong>Nutrition Dashboard</strong> (Power BI): Cleaned USDA datasets with Power Query; used DAX to visualize meal plan distribution.</li>
+        <li><strong>SQL Product Ranking System</strong>: Created advanced queries (JOINs, CTEs, window functions) to rank products and analyze purchasing trends.</li>
       </ul>
-      <p><strong>Berkeley College – B.F.A. in Graphic Design (2019–2022)</strong><br/>
-      Focus: Typography, Branding, Adobe Creative Suite, Motion Graphics</p>
-    </div>
+    </section>
 
-    <div class="section">
-      <h2>Professional Experience</h2>
-      <p><strong>Crew Leader / Shift Supervisor – Various High-Volume Venues (2018–2024)</strong></p>
+    <section class="section">
+      <h2>Experience</h2>
+
+      <p class="role">Executive Assistant <span class="at">|</span> Halocentric (IT) <span class="meta">· 2019–2024</span></p>
       <ul>
-        <li>Reduced inventory waste by 15% and weekly ordering costs by 10% using Excel analysis.</li>
-        <li>Boosted drink sales by 25% via seasonal cocktail menus based on trend analysis.</li>
-        <li>Improved foot traffic by 15% and engagement by 40% through targeted social content.</li>
-        <li>Led 6–10 staff per shift, reduced turnover time by 20%, and maintained 99.9% financial accuracy.</li>
+        <li>Built and automated Excel/Sheets trackers for 50+ tasks, timelines, and client requests, improving reporting speed by 30%.</li>
+        <li>Consolidated client and project data, enabling weekly KPI monitoring and reducing reporting errors by 15%.</li>
+        <li>Coordinated schedules and documentation for 10+ concurrent projects, ensuring on-time deliverables and reducing missed deadlines by 20%.</li>
+        <li>Maintained digital databases of 500+ client records with 98% accuracy, supporting analytics and audit readiness.</li>
       </ul>
 
-      <p><strong>Multimedia Marketer (2019–Present)</strong><br/>
-      Freelance marketing-focused creator and strategist working across platforms.</p>
+      <p class="role">Administrative Assistant <span class="at">|</span> LM Liquidity (Real Estate) <span class="meta">· 2014–2022</span></p>
       <ul>
-        <li>Grew reach by 50% and engagement by 35% using cross-platform analytics.</li>
-        <li>Engineered 60+ beats and vocal tracks using DAWs (FL Studio, Logic Pro) for branding and content, increasing listenership by 40%.</li>
-        <li>Designed 100+ pieces of digital cover art and branded graphics using Illustrator and Canva, boosting campaign performance by 20%.</li>
+        <li>Managed intake, scheduling, and correspondence for 25–30 clients weekly, ensuring timely follow-ups.</li>
+        <li>Designed and maintained Excel/Sheets logs for 1,000+ client records, streamlining compliance and reducing data-entry errors by 25%.</li>
+        <li>Drafted and implemented standardized email templates, cutting response time from 24 hrs → 8 hrs.</li>
+        <li>Summarized weekly client activity and KPIs for leadership, improving visibility into deal progress and conversion rates.</li>
       </ul>
-    </div>
+
+      <p class="role">Crew Leader <span class="at">|</span> Hospitality Venues <span class="meta">· 2018–2024</span></p>
+      <ul>
+        <li>Reduced inventory waste by 15% and weekly ordering costs by 10% through Excel analysis.</li>
+        <li>Increased sales by 25% via seasonal menu changes based on trend data.</li>
+        <li>Supervised 6–10 staff per shift, reducing turnover time by 20% and maintaining 99.9% financial accuracy.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Education &amp; Credentials</h2>
+      <ul>
+        <li><strong>General Assembly</strong> – Data Analytics Bootcamp Certificate (2024–2025)</li>
+        <li><strong>Berkeley College</strong> – B.F.A. Graphic Design (2019–2022)</li>
+        <li><strong>Additional:</strong> Formerly licensed Notary Public, Real Estate, and Life &amp; Health Insurance (NJ)</li>
+      </ul>
+    </section>
 
     <div class="download">
-      📄 <a href="https://chrissyh1.github.io/resume/chrissyh_resume2025.pdf" download>Download Resume (PDF)</a>
+      📄 <a href="analyst_resume%202025.docx" download>Download Resume (Word)</a>
     </div>
-  </div>
+  </main>
 </body>
 </html>
